@@ -1,0 +1,56 @@
+Notes on Git(Using Git Bash to use Git Commands)
+
+GIT = Most popular Version Control System that lies in your desktop
+GITHUB = Host platform that allows you to store documents online
+
+NB to save to GitHub from Git, you require the email address to be the same one you configures you Git with
+NB "m" means master meaning the original branch. Changes are done to subsquent branches then saved back to the
+original branch
+
+Git Commit -m =Means that we are now tracking the file and we will describe what changes we wanna make to the file
+
+Git status =Tells us the Status of our Git created file. Is it untracked or not,does it contain any data
+
+When you see the file name and it's in red under "git status" , it means that it's untracked
+
+When green,it means it tracking all the changes
+
+Git log =Shows us all the commit logs
+
+mkdir = Means we are creating a directory in our desktop
+
+rm filename.txt =Means we are removing the file name
+
+touch filename.txt =Means we are adding a new file now
+
+Git diff =will show us what the difference is between versions of our Git File that we have created
+
+Git add filename = once we make these changes, Git will now know to save these changes into the file
+
+Git log -1  = Will give us the time of the most recent commit
+
+Git checkout HEAD~4 = If you have four commits on your log history,it will take you back four commits
+
+For example I made 4 commits on my file ,since the original version(HEAD) that was created and now I actually want to see
+what the original version(HEAD) looks like , I would then say git checkout HEAD~4 to go back 4 versions ago
+
+Git checkout HEAD~0 = Would show me what my file looks like at its current version with all its changes
+Git Checkout is also for switching branches not just  different commits
+
+Git reset =Just undoes a stage. No changes will be made
+Git reset head~1 --soft = Would delete the commit title in the log but will not delete the stage change made in the file
+Git reset head~1 --mixed = Goes back to previous commit and also makes the changes unstaged
+Git reset head~1 --hard = Removes previous head and removes the changes we made into the file
+
+
+git --help  = get help on all common git commands
+Init = Makes an empty git repository in the directory
+mkdir = creates a new directory
+cd = changes current directory and enters desired one
+
+Git branch gitlearning = Means I have created a new branch called git learning
+Git Merge gitlearning = Once I have switched back to the master branch then I am able to merge the data from this portion(branch) into the master branch
+
+
+"Changes to the file is called staging"
+
